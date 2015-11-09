@@ -8,8 +8,12 @@
 #include <string.h>  //提供strlen()的原型
 #define DENSITY 62.4 //人的密度，单位是英镑/立方英尺
 int main() {
-	getWeight();
-
+	//getWeight();
+	//printf("nihaso \n");
+	//printf("%d",getInt());
+	//printWhile();
+	//printFor();
+	printDoWhile();
 	return 0;
 }
 
@@ -28,4 +32,35 @@ void getWeight(void) {
 	printf("还有，你的名字有%d个字母 \n", letters);
 	printf("我们需要%d字节来存储它 \n", size);
 }
+
+int getInt(void){
+	return 100;
+}
+
+const int TIMES=10;
+
+void printWhile(void){
+	int a;
+	while(scanf("%d",&a)==1){
+		printf("you have input %d \n",a);
+	}
+}
+void printFor(void){
+	int i;//i在for里面第一次声明，只有C99支持，然而我这儿不支持个
+	for(i=0i;i<TIMES;i++){
+		printf("I love you! %d \n",i);
+	}
+}
+
+void printDoWhile(){
+	char str[30];
+	_Bool a=1;
+	do{
+		printf("请输入一个句子：___ \b\b\b ");
+		scanf("%s",str);
+		printf("你输入了：%s \n",str);
+	}while(a);
+}
+
+
 
