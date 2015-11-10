@@ -7,15 +7,15 @@
 #include <stdio.h>
 #include <string.h>  //提供strlen()的原型
 #define DENSITY 62.4 //人的密度，单位是英镑/立方英尺
-int main() {
+//int main() {
 	//getWeight();
 	//printf("nihaso \n");
 	//printf("%d",getInt());
 	//printWhile();
 	//printFor();
-	printDoWhile();
-	return 0;
-}
+//	printDoWhile();
+	//return 0;
+//}
 
 void getWeight(void) {
 	float weight, volume;
@@ -56,7 +56,7 @@ void printDoWhile(){
 	char str[30];
 	_Bool a=1;
 	do{
-		printf("请输入一个句子：___ \b\b\b ");
+		printf("请输入一个句子：___ \b\b\b\b");
 		scanf("%s",str);
 		printf("你输入了：%s \n",str);
 	}while(a);
